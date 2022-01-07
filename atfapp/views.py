@@ -95,6 +95,8 @@ def CheckExist(request):
                         # give false output to the raspberry pi
                         return JsonResponse({'Access':'Denied'})
         except Exception as e:print(e)
+    else:
+        return HttpResponse("Need post request")
    
 # Checkphoto.CurrentDate
 
