@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'atf.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE':'django.db.backends.sqlite3',
-        'NAME':'ijaz$atfdatabase',
-        'USER':'ijaz',
+        'ENGINE':'django.db.backends.postgresql_psycopg2',
+        'NAME':'atfdatabase',
+        'USER':'postgres',
         'PASSWORD':'ijazzaji',
-        'HOST':'ijaz.mysql.pythonanywhere-services.com',
-        'PORT':'3306'
+        'HOST':'localhost',
+        'PORT':'5432'
     }
 }
 

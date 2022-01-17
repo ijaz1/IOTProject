@@ -3,11 +3,11 @@ from django.db import models
 # Create your models here.
 
 class UserDetails(models.Model):
-    fingerprint=models.CharField(max_length=200)
-    photo=models.ImageField()
+    fingerprint=models.ImageField(upload_to='fingerprint_img')
+    photo=models.ImageField(upload_to='face_image')
 
 class Transaction(models.Model):
-    fingerprint=models.CharField(max_length=200)
-    photo=models.ImageField()
+    fingerprint=models.ImageField(upload_to='fingerprint_img')
+    photo=models.ImageField(upload_to='face_image')
     CurrentDate=models.DateField()
     status=models.IntegerField()
